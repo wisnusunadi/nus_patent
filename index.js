@@ -14,6 +14,9 @@ const PORT = process.env.PORT;
 //Routes
 app.use("/api",home)
 
+router.get("/", async (req,res)=>{
+    res.send("Connected")
+})
 
 app.listen(PORT,() => {
     console.log("Express run " + PORT);
