@@ -14,7 +14,7 @@ const PORT = process.env.PORT;
 //Routes
 app.use("/api",home)
 
-router.get("/", async (req,res)=>{
+app.get("/", async (req,res)=>{
     res.send("Connected")
 })
 
