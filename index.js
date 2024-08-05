@@ -15,7 +15,9 @@ app.listen(PORT,() => {
     console.log("Express run " + PORT);
 })
 
-
+app.get("/", async (req,res)=>{
+    res.send("Hello World")
+})
 
 app.get("/api/kelas", async (req,res)=>{
     const page = parseInt(req.query.page) || 0;
