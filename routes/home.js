@@ -3,11 +3,16 @@ const router = express.Router();
 const { PrismaClient } = require("@prisma/client");
 const cors = require('cors');
 
-const app = express();
-app.use(cors());
+// const app = express();
+// app.use(cors());
 
 
-const prisma = new PrismaClient();
+// const prisma = new PrismaClient();
+
+
+router.get("/", async (req,res)=>{
+    res.send("Connected")
+})
 
 // router.get("/kelas", async (req,res)=>{
 //     const page = parseInt(req.query.page) || 0;
