@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "postinstall": "prisma generate",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-    "build": "prisma generate && next build"
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
